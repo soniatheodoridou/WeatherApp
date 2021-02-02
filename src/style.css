@@ -199,3 +199,10 @@ a:link {
 a:hover {
   color: #404040;
 }
+
+.sonia {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #404040;
+}

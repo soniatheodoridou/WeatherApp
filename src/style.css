@@ -17,6 +17,10 @@ body {
   box-shadow: 0px 0px 20px #00000027;
 }
 
+.weather-temperature img {
+  margin-right: 20px;
+}
+
 ::placeholder {
   color: #accbee;
   opacity: 0.7;
@@ -63,6 +67,31 @@ h1 {
   height: 28px;
 }
 
+#date {
+  display: block;
+  margin: 20px;
+  font-family: "Manrope", sans-serif;
+  text-align: left;
+  letter-spacing: 2.22px;
+  font-size: 16px;
+  color: #404040;
+  opacity: 1;
+  width: 250px;
+  height: 16px;
+  opacity: 0.5;
+}
+
+.temperature {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2.22px;
+  color: #404040;
+  text-shadow: 0px 0px 10px #00000026;
+  opacity: 1;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -79,55 +108,6 @@ li {
   opacity: 1;
 }
 
-#date {
-  display: block;
-  margin: 20px;
-  font-family: "Manrope", sans-serif;
-  text-align: left;
-  letter-spacing: 2.22px;
-  font-size: 16px;
-  color: #404040;
-  opacity: 1;
-  width: 250px;
-  height: 16px;
-  opacity: 0.5;
-}
-
-.daily-weather {
-  display: block;
-  margin: 20px;
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  text-align: left;
-  letter-spacing: 0.78px;
-  color: #404040;
-  opacity: 1;
-  width: 250px;
-  height: 16px;
-}
-
-.current-icon {
-  display: block;
-  color: #f6cf67;
-  font-size: 85px;
-  margin: 0px 0 0px -20px;
-}
-
-.temperature {
-  display: block;
-  margin: 20px;
-  font-family: "Manrope", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  width: 93px;
-  height: 47px;
-  text-align: left;
-  letter-spacing: 2.22px;
-  color: #404040;
-  text-shadow: 0px 0px 10px #00000026;
-  opacity: 1;
-}
-
 .weather-status {
   display: block;
   margin: 0 0 0px 20px;
@@ -139,14 +119,17 @@ li {
   opacity: 1;
 }
 
-.row-1 {
-  position: inline;
-}
-
-.col-4 {
+p {
   display: block;
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 0.78px;
+  color: #404040;
+  opacity: 1;
+  width: 250px;
+  height: 16px;
 }
 
 .col-2 {
@@ -173,31 +156,6 @@ h6 {
   text-align: center;
   width: 30px;
   height: 25px;
-}
-
-.info {
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  text-align: left;
-  letter-spacing: 0.78px;
-  line-height: 25px;
-  color: #ffffff;
-  opacity: 1;
-  margin: 20px 0 10px -40px;
-}
-
-.sunbig {
-  height: 150px;
-  display: inline;
-  margin: -20px -40px;
-}
-
-.units {
-  margin: 20px;
-}
-.celsius {
-  border-right-style: solid;
-  border-color: #accbee;
 }
 
 a:link {

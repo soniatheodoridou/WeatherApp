@@ -6,21 +6,20 @@ body {
   background: linear-gradient(#e7f0fd, #accbee);
 }
 
-::placeholder {
-  color: #accbee;
-  opacity: 0.7;
-}
-
-.container {
-  display: block;
-  margin: 100px 600px;
-  width: 700px;
-  height: 550px;
+.weather-app {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
   background: transparent linear-gradient(0deg, #accbee 0%, #e7f0fd 100%) 0% 0%
     no-repeat padding-box;
   border-radius: 8px;
   opacity: 1;
   box-shadow: 0px 0px 20px #00000027;
+}
+
+::placeholder {
+  color: #accbee;
+  opacity: 0.7;
 }
 
 form #search-city {
@@ -31,7 +30,7 @@ form #search-city {
   opacity: 1;
   background-color: white;
   margin: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   box-shadow: 0px 0px 10px #00000011;
 }
@@ -54,7 +53,7 @@ button {
 h1 {
   display: inline;
   margin: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Manrope", sans-serif;
   text-align: left;
   font-size: 30px;
   letter-spacing: 1.33px;
@@ -64,10 +63,26 @@ h1 {
   height: 28px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #404040;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.78px;
+  opacity: 1;
+}
+
 #date {
   display: block;
   margin: 20px;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Manrope", sans-serif;
   text-align: left;
   letter-spacing: 2.22px;
   font-size: 16px;
@@ -81,7 +96,7 @@ h1 {
 .daily-weather {
   display: block;
   margin: 20px;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   text-align: left;
   letter-spacing: 0.78px;
@@ -101,7 +116,7 @@ h1 {
 .temperature {
   display: block;
   margin: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 50px;
   font-weight: 300;
   width: 93px;
@@ -116,7 +131,7 @@ h1 {
 .weather-status {
   display: block;
   margin: 0 0 0px 20px;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   text-align: left;
   letter-spacing: 2.22px;
@@ -145,7 +160,7 @@ h1 {
 }
 
 h5 {
-  font-family: Roboto-Regular;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   color: #404040;
   text-align: center;
@@ -161,7 +176,7 @@ h6 {
 }
 
 .info {
-  font-family: Roboto-Regular;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   text-align: left;
   letter-spacing: 0.78px;

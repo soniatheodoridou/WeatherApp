@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: linear-gradient(#e7f0fd, #accbee);
+  background: #e7f0fd;
 }
 
 .weather-app {
@@ -153,9 +153,13 @@ h5 {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   color: #404040;
+  opacity: 1;
   text-align: center;
   letter-spacing: 0.78px;
   opacity: 1;
+  letter-spacing: 2.22px;
+  opacity: 1;
+  opacity: 0.5;
 }
 
 .weather-forecast-temperature {
@@ -167,6 +171,23 @@ h5 {
   text-align: center;
   letter-spacing: 0.78px;
   opacity: 1;
+}
+
+.hourly-forecast {
+  position: absolute;
+  margin: -10px 0px 0px 10px;
+  padding: 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.22px;
+  color: #404040;
+  height: 20px;
+  opacity: 1;
+  text-align: center;
+  background-color: #e7f0fd;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
 }
 
 a:link {

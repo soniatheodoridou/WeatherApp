@@ -2,10 +2,6 @@ html {
   height: 100%;
 }
 
-body {
-  background: #e7f0fd;
-}
-
 .weather-app {
   max-width: 800px;
   margin: 50px auto;
@@ -67,6 +63,20 @@ button {
   color: #accbee;
   font-size: 20px;
   margin: 0px 5px;
+}
+
+#darkmode {
+  display: block;
+  margin: 0 0 0px 700px;
+  color: orange;
+}
+
+#dark-text {
+  display: block;
+  margin: 0 0 0px 620px;
+  color: white;
+  font-family: "Indie Flower", cursive;
+  color: orange;
 }
 
 h1 {
@@ -152,7 +162,7 @@ h5 {
   margin: 20px;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
-  color: #404040;
+  color: orange;
   opacity: 1;
   text-align: center;
   letter-spacing: 0.78px;

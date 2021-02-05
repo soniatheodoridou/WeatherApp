@@ -65,20 +65,6 @@ button {
   margin: 0px 5px;
 }
 
-#darkmode {
-  display: block;
-  margin: 0 0 0px 700px;
-  color: orange;
-}
-
-#dark-text {
-  display: block;
-  margin: 0 0 0px 620px;
-  color: white;
-  font-family: "Indie Flower", cursive;
-  color: orange;
-}
-
 h1 {
   display: inline;
   margin: 20px;

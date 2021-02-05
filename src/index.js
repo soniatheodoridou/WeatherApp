@@ -1,14 +1,6 @@
-function formatDate(date) {
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
 
-  let dayIndex = date.getDay();
   let days = [
     "Sunday",
     "Monday",
@@ -18,18 +10,29 @@ function formatDate(date) {
     "Friday",
     "Saturday"
   ];
-  let day = days[dayIndex];
-
-  return `${day} ${hours}:${minutes}`;
+  let day = days[date.getDay()];
+  return `${day} ${formatHours(timestamp)}`;
 }
 
-let dateElement = document.querySelector("#date");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
+function formatHours(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+
 
 function displayWeatherCondition(response) {
 let temperatureElement = document.querySelector("#temperature");
 let iconElement = document.querySelector("#icon");
+let dateElement = document.querySelector("#date");
 
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("h2").innerHTML = response.data.weather[0].main;
@@ -38,6 +41,7 @@ let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
 
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
     iconElement.setAttribute(
     "src",
@@ -47,11 +51,30 @@ let iconElement = document.querySelector("#icon");
 
 }
 
+function displayForecast(response) {
+let forecastElement = document.querySelector("#forecast");
+let forecast = response.data.list[0];
+console.log(forecast);
+
+forecastElement.innerHTML = `
+<div class="col-2">
+                <h5>
+                ${formatHours(forecast.dt * 1000)}
+                </h5>
+                <h6><img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"></i></h6>
+                <p><strong>${Math.round(forecast.main.temp_max)}° / </strong>${Math.round(forecast.main.temp_min)}°</p>
+            </div>
+`
+}
+
+
 function searchCity(city) {
   let apiKey = "0e00fd71ae37e49c258cd1cf852920e8";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function handleSubmit(event) {

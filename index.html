@@ -30,7 +30,7 @@
                 <input 
                 id="search-city" 
                 type ="search" 
-                placeholder="   Type a city 😊"
+                placeholder="   Type a city  😊"
                 autofocus="on"
                 autocomplete="off"
                 />
@@ -46,22 +46,21 @@
             </form>
         </nav>
     </div>
-    <div id="date"></div>
+        <div id="date"></div>
 
         <h1 id=city>
         </h1>
 
         <div class="row weather-today">
-
             <div class="col-6">
                 <div class="clearfix weather-temperature">
-                    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    <img src=""
                     id="icon"
                     class="float-left">
                 <strong id=temperature></strong>
                 <span class="units" id=units>
-                    <a href="#" id="celsius" class="active">°C</a> |
-                    <a href="#" id="fahrenheit">°F</a></span>
+                    <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span>
             </div>
         </div>
 
@@ -69,50 +68,21 @@
             <div class="col-6">
                 <ul>
                     <li>
-                        Wind Speed: <span id="wind"></span> km/h
+                        Wind: <span id="wind"></span> km/h
                     </li>
                     <li>
                         Humidity: <span id="humidity"></span>%
-                    </li>
-                    <li>
-                       Precipitation: <span id="precipitation"></span>%
                     </li>
                 </ul>
 
             </div>
         </div>
 
-    <h2 class="weather-status">Partially cloudy</h2>
+        <h2 class="weather-status">Partially cloudy</h2>
 
         <br />
-
-        <div class="row weather-forecast">
-            <div class="col-2">
-                <h5>Today</h5>
-                <h6><img src="" class="sun"></i></h6>
-                <p>17/23°C</p>
-            </div>
-            <div class="col-2">
-                <h5>Tuesday</h5>
-                <h6><img src="" class="sun"></h6>
-                <p>23/26°C</p>
-            </div>
-            <div class="col-2">
-                <h5>Wednesday</h5>
-                <h6><img src="" class="sun"></h6>
-                <p>23/26°C</p>
-            </div>
-            <div class="col-2">
-                <h5>Thursday</h5>
-                <h6><img src="" class="sun"></h6>
-                <p>23/26°C</p>
-            </div>
-            <div class="col-2">
-                <h5>Friday</h5>
-                <h6><img src="" class="sun"></h6>
-                <p>26/28°C</p>
-            </div>
-        </div>
+        <div class="row daily"></div>
+       
     </div>
 </div>
     

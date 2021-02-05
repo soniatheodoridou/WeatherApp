@@ -158,6 +158,17 @@ h5 {
   opacity: 1;
 }
 
+.weather-forecast-temperature {
+  display: block;
+  margin: 20px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #404040;
+  text-align: center;
+  letter-spacing: 0.78px;
+  opacity: 1;
+}
+
 a:link {
   text-decoration: none;
   color: red;
